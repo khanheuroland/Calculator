@@ -15,3 +15,5 @@ Base on this program at https://www.desmos.com/scientific let create the script 
 
 4. actor.Multiply().between(number1).and(number2) 
 ```
+
+The number1, number2 are any numbers. Can have from 1 to 4 digits.
