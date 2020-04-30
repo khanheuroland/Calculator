@@ -16,7 +16,7 @@ Base on this program at https://www.desmos.com/scientific let create the script 
 4. actor.Multiply().between(number1).and(number2) 
 ```
 
-The number1, number2 are any numbers. Can have from 1 to 4 digits.
+The number1, number2 are any numbers less than 10
 
 ## Expected
 
@@ -27,3 +27,6 @@ example: 9 + 6
 2. The corresponding result is display on the right of result box
 
 example: = 15
+
+## Advanced
+Let create your action is used to input any value of number1 and number2 no limit the digit
