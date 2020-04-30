@@ -1,5 +1,6 @@
 package calculator.tasks;
 
+import calculator.actions.InputNumber;
 import calculator.ui.NumberPad;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.GivenWhenThen;
@@ -55,9 +56,9 @@ public class Calculate implements Task {
     @Step("Make the #operator between #firstNumber and #secondNumber")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(NumberPad.GET_NUMBER(this.firstNumber)),
+                InputNumber.with(this.firstNumber),
                 Click.on(NumberPad.GET_OPERATOR(this.operator)),
-                Click.on(NumberPad.GET_NUMBER(this.secondNumber))
+                InputNumber.with(this.secondNumber)
         );
     }
 

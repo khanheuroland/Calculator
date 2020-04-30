@@ -43,12 +43,12 @@ public class CalculatorStory {
         givenThat(anna).wasAbleTo(openTheApplication);
 
         when(anna).attemptsTo(
-                Calculate.Add().between(6).and(9)
+                Calculate.Add().between(60).and(90)
         );
 
         then(anna).should(
-                seeThat(new FullOperands(), equalTo("6+9")),
-                seeThat(new OperandResult(), equalTo("15")));
+                seeThat(new FullOperands(), equalTo("60+90")),
+                seeThat(new OperandResult(), equalTo("150")));
 
     }
 
@@ -58,12 +58,12 @@ public class CalculatorStory {
         givenThat(anna).wasAbleTo(openTheApplication);
 
         when(anna).attemptsTo(
-                Calculate.Subtract().between(9).and(6)
+                Calculate.Subtract().between(90).and(60)
         );
 
         then(anna).should(
-                seeThat(new FullOperands(), equalTo("9−6")),
-                seeThat(new OperandResult(), equalTo("3")));
+                seeThat(new FullOperands(), equalTo("90−60")),
+                seeThat(new OperandResult(), equalTo("30")));
 
     }
 
@@ -73,12 +73,12 @@ public class CalculatorStory {
         givenThat(anna).wasAbleTo(openTheApplication);
 
         when(anna).attemptsTo(
-                Calculate.Multiply().between(9).and(6)
+                Calculate.Multiply().between(90).and(6)
         );
 
         then(anna).should(
-                seeThat(new FullOperands(), equalTo("9·6")),
-                seeThat(new OperandResult(), equalTo("54")));
+                seeThat(new FullOperands(), equalTo("90·6")),
+                seeThat(new OperandResult(), equalTo("540")));
 
     }
 
@@ -88,11 +88,11 @@ public class CalculatorStory {
         givenThat(anna).wasAbleTo(openTheApplication);
 
         when(anna).attemptsTo(
-                Calculate.Divide().between(9).and(6)
+                Calculate.Divide().between(90).and(6)
         );
 
         then(anna).should(
-                seeThat(new OperandResult(), equalTo("1.5")));
+                seeThat(new OperandResult(), equalTo("15")));
 
     }
 }

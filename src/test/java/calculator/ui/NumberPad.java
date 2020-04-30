@@ -32,6 +32,13 @@ public class NumberPad {
 
     }
 
+    public static Target GET_NUMBER(char number)
+    {
+        return Target.the("the number #"+ number)
+                .located(By.xpath("//*[@dcg-command=\""+number+"\"]"));
+
+    }
+
     public static Target GET_OPERATOR(Calculate.Operator operator)
     {
         switch (operator)
