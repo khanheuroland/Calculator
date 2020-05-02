@@ -1,4 +1,4 @@
-package calculator.features.search;
+package calculator.features;
 
 import calculator.questions.FullOperands;
 import calculator.questions.OperandResult;
